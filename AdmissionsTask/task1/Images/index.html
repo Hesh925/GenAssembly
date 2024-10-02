@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Tyler Heshmati</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://dash.ga.co/assets/anna-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="button"] {
+      background: red;
+      color: white;
+    }
+    img[class="pfp"] {
+      width: 19%;
+      border-radius: 50%;
+      border: 3px solid #599;
+    }
+  </style>
+</head>
+<body>
+  <img class="pfp" src="https://avatars.githubusercontent.com/u/41883777?v=4">
+  <p>Hi! I'm Tyler, a Bay Area based Computer Science Student</p>
+  <input type="email" placeholder="Your email" id="email">
+  <input type="button"onclick="onSubmit()" value="Say Hello!">
+</body>
+<script>
+function onSubmit() {
+  const input = document.getElementById("email")
+  alert(`Hi ${input.value}!`)
+}
+</script>
